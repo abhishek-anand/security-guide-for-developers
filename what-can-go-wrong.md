@@ -39,7 +39,7 @@ An important vulnerability for serious stuff like device takeover or stealing re
 ![Top 50 products by disclosed vulnerabilites](cves.png)
 
 **Human Factor in Security**
-An important but mostly overlooked aspect of security design and flaws is social engineering attacks. Human interaction is an important aspect of software and is often misused in various non-technical ways to gain illegal access to systems. For example, the hacker who called Verizon to get a new SIM to hack the activist's account probably did not write a single line of code to break 2 factor authentication. A huge population around the world, mainly in developing countries are having their first internet experience right now. Without the right set of information, it would be fairly easy to engineer an attack that would appear legitimate to them and then convince them in exposing their personal information, passwords and payment details. For example a link like https://google.com/amp/gmail-login.website will redirect to gmail-login.website which can be a valid hackers website with Gmail like login page thanks to new TLDs or domain extensions like .website coming up. This is happening at an alarming rate right now. For example, if the dating app in our earlier example has not set their DNS settings for email properly (specifically SPF header, DMARC and DKIM), it would be fairly easy to send a mail appearing to come from their domain and email address and then exploit their users into revealing personal data. DNS settings are explained in detail in Chapter 12. 
+An important but mostly overlooked aspect of security design and flaws is social engineering attacks. Human interaction is an important aspect of software and is often misused in various non-technical ways to gain illegal access to systems. For example, the hacker who called Verizon to get a new SIM to hack the activist's account probably did not write a single line of code to break 2 factor authentication. A huge population around the world, mainly in developing countries are having their first internet experience right now. Without the right set of information, it would be fairly easy to engineer an attack that would appear legitimate to them and then convince them in exposing their personal information, passwords and payment details. For example a link like https://google.com/amp/gmail-login.website will redirect to gmail-login.website which can be a valid hackers website with Gmail like login page thanks to new TLDs or domain extensions like .website coming up. This is happening at an alarming rate right now. If the dating app in our earlier example has not set their DNS settings for email properly (specifically SPF header, DMARC and DKIM), it would be fairly easy to send a mail appearing to come from their domain and email address and then exploit their users into revealing personal data. DNS settings are explained in detail in Chapter 12. 
 
 A common way to exploit users is to place clickbaity advertisements on porn websites inviting a click which then either asks for personal information and payment details or leads to a malware install. A malware is a small piece of executable that is mostly controlled remotely and performs certain set of instructions like deleting files on the users system, stealing user passwords or can be used to attack other websites and systems in tandem with other malwares installed on various other systems, collectively called as a botnet.
 
@@ -55,12 +55,12 @@ DDoS attacks are generally measured in terms of bandwidth of traffic. The recent
 ![A map of live DDoS attacks](ddos.png) 
 
 
-You can read more about DoS in Chapter 13.
+You can read more about DoS attacks in Chapter 13.
 
 
-**LangSec**
+In 2005, MySpace (when it still was a thing) was hit by a relatively harmless vulnerability where more than a million users profiles displayed the text 'but most of all, samy is my hero'. And all this happened within a day of its release by 21 year old Samy Kamkar. MySpace has to be shut down for sometime to fix the issue and Samy was raided by the FBI and put on probation with no computer access for three years. This was an example of Cross-Site Srcipting bug, more commonly known as XSS. XSS is one of the most frequently occuring vulnerabilites in web security. XSS allows execution of arbitrary JavaScript code in a users browser when the user visits a vulnerable website. The code can load other remote JavaScript files, steal cookies and session information, deface websites, deceive users into disclosing their secrets appearing as the legitimate website or display some text as in case of MySpace and Samy.
 
-XSS, Certificate issue, nginx apache issue. Security headers chapter 11.
+Certificate issue, nginx apache issue. We discuss security related HTTP headers in Chapter 11.
 
 
 
@@ -72,6 +72,7 @@ Mobile full website not visible, new TLDs. Read more in Chapter 17.
 
 **Cybersecurity legistations, cyberwar/state sponsored attacks, legality and bug bounty programs**
 
+Before you get started with looking under the hood of systems, you need to be aware of the legal implications. 
 
 
 
